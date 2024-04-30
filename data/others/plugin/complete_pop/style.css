@@ -1,0 +1,36 @@
+.complete-pop {
+    width: 141px;
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+    position: absolute;
+    top: 49px;
+    right: -141px;
+    background: linear-gradient(180deg, rgba(54, 20, 19, 0.5), rgba(0, 0, 0, 0.4),rgba(52, 20, 19, 0.4));
+}
+
+.complete-pop img {
+    width: 16px;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 8px 3px 14px;
+}
+
+.cpop-anim {
+    animation-name: cpop-animation;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes cpop-animation {
+    0%   { right: -141px; }
+    30%  { right: 0px; }
+    70%  { right: 0px; }
+    100% { right: -141px; }
+}
